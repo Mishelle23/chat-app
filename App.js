@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 import Chat from './components/Chat';
 import Start from './components/Start';
 
+
 import 'react-native-gesture-handler';
 
 // Importing navigation containers for ability to move between screens
