@@ -73,6 +73,8 @@ export default class CustomActions extends React.Component {
     }
   };
 
+
+  //To upload images to firestore database
   uploadImageFetch = async (uri) => {
     const blob = await new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
@@ -100,6 +102,8 @@ export default class CustomActions extends React.Component {
     return await snapshot.ref.getDownloadURL();
   };
 
+
+  //controles chat options
   onActionPress = () => {
     const options = ['Choose From Library', 'Take Picture', 'Send Location', 'Cancel'];
     const cancelButtonIndex = options.length - 1;
